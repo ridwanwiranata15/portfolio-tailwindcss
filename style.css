@@ -1,0 +1,211 @@
+* {
+    /* Hapus margin dari semua elemen */
+    margin:0px;
+  }
+  
+  body{
+    /* Tentukan jenis font yang digunakan */
+    font-family:Arial;
+  }
+  
+  nav {
+    /* Beri warna pada background */
+    background-color:grey;
+    /* Atur display agar parent fleksibel terhadap child-nya */
+    display:flex;
+    /* Atur perataan isi ke ruang yang sama */
+    justify-content:center;
+    /* Atur perataan item pada sumbu silang */
+    align-items:space-between;
+    /* Tambahkan padding ke dalam navigasi */
+    padding:10px;
+    width: 100vw;
+    /* Atur posisi navigasi tetap di layar */
+    position:fixed;
+  }
+  
+  nav ul {
+    /* Tampilkan elemen ul sebagai flex */
+    display:flex;
+    /* Atur jarak antara elemen ul */
+    gap:20px;
+    /* Hilangkan style daftar */
+    list-style:none;
+  }
+  
+  nav ul li a {
+    /* Atur warna teks tautan */
+    color:cyan;
+    /* Hilangkan garis bawah dari tautan */
+    text-decoration:none;
+    /* Ubah huruf menjadi kapital */
+    text-transform:uppercase;
+    /* Atur ketebalan huruf */
+    font-weight:bold;
+    /* Tentukan jenis font yang digunakan */
+    font-family:helvetica;
+  }
+  
+  h1 {
+    /* Atur ukuran font heading 1 */
+    font-size:52px;
+  }
+  
+  h2 {
+    /* Atur ukuran font heading 2 */
+    font-size:32px;
+  }
+  
+  section {
+    /* Tambahkan padding di dalam section */
+    padding:0 8%;
+  }
+  
+  #hero {
+    height: 80vh;
+    /* Atur teks berada di tengah */
+    text-align:center;
+    /* Tambahkan padding di dalam hero */
+    padding:100px 0px 0px 0px;
+  }
+  
+  #about {
+    height: 47vh;
+    /* Beri warna pada background */
+    background-color:lightcoral;
+    padding:19px 0px 0px 0px ;
+
+  
+    & div {
+      /* Tambahkan margin atas pada div */
+      margin:20px 0px 0px 0px;
+      /* Tampilkan elemen div sebagai flex */
+      display:flex;
+    }
+  
+    & h2 {
+      /* Atur warna teks heading 2 */
+      color:aqua;
+    }
+  }
+  
+  #my-project {
+    min-height: 94vh;
+  
+    h2 {
+      /* Tambahkan margin atas pada heading 2 */
+      margin:20px 0px 12px 0px;
+      /* Tambahkan margin bawah pada heading 2 */
+      margin:0px 10px 0px 0px;
+      padding:20px;
+    }
+  
+    div {
+      /* Tampilkan elemen div sebagai flex */
+      display:flex;
+      /* Bungkus konten bila terlalu besar */
+      flex-wrap:wrap;
+      /* Atur perataan item pada sumbu silang */
+        justify-content:center;
+      /* Atur perataan konten di tengah */
+      align-items:center;
+      /* Atur jarak antar elemen dalam div */
+      gap:20px;
+  
+      .card {
+        width:72%;
+       flex-direction:column;
+        /* Tampilkan elemen card sebagai flex */
+        display:flex;
+        /* Tentukan arah flex ke kolom */
+        flex-direction:column;
+        /* Tambahkan padding dalam card */
+        padding:30px;
+        /* Beri warna pada background card */
+        background-color:lightblue;
+        margin:10px;  
+
+        /* Buat sudut card menjadi bulat */
+        border-radius:20px;
+      }
+  
+      .gambar {
+          /* Atur ukuran latar gambar */
+          background-image:url('logo.png');
+          width:100px;
+          height:100px;
+            background-size:cover;
+          /* Atur posisi latar genjadi bulat */
+          border-radius:20px;
+          background-color:white;
+          margin:10px;
+
+      }
+    }
+  }
+  #contact {
+    /* Tambahkan padding di dalam contact */
+    padding:60px;
+    /* Atur display contact sebagai flex */
+    display:flex;
+    /* Atur perataan konten di tengah */
+    align-items:center;
+    h2 {
+      /* Atur margin bawah untuk h2 dalam contact */
+      margin-bottom:10px;
+    }
+  
+    div {
+      /* Tampilkan elemen div sebagai flex */
+      display:flex;
+      /* Atur jarak antar elemen dalam contact */
+      gap:10;
+      
+      & > div {
+        /* Beri padding dalam setiap div */
+        padding:10px;
+      }
+      
+      iframe {
+        /* Atur lebar dan tinggi iframe */
+            width:100%;
+            height:100%;
+        /* Beri border pada iframe */
+        border:1px solid black;
+      }
+    }
+  }
+  
+  footer {
+    /* Atur posisi footer di bawah */
+    position:absolute;
+    /* Beri padding pada footer */
+    padding:10px;
+    /* Atur warna teks footer */
+    color:white;
+    /* Beri warna latar pada footer */
+    background-color:grey;
+    /* Atur perataan teks di tengah */
+    text-align:center;
+    width:100%
+  }
+
+  /* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+    display:none;
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+
+}
